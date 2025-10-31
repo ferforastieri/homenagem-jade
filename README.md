@@ -1,5 +1,5 @@
 ## Flor em SCSS para o Dia das Mulheres
-Este projeto consiste em uma representação visual de uma flor desenvolvida em SCSS, criada para celebrar o Dia das Mulheres. A flor é estilizada usando CSS moderno e pré-processado com SCSS para facilitar a manutenção e a extensibilidade.
+Este projeto consiste em uma representação visual de uma flor desenvolvida em SCSS, criada para celebrar o Dia das Mulheres, posteriormente virou uma homenagem a minha falecida filha jade. A flor é estilizada usando CSS moderno e pré-processado com SCSS para facilitar a manutenção e a extensibilidade.
 
 ```
 $ sass --watch style.scss:style.css
