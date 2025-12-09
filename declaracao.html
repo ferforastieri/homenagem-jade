@@ -9,13 +9,20 @@
   <style>
     body {
       overflow-y: auto;
+      overflow-x: hidden;
       padding: 20px;
+      padding-top: 40px;
+      min-height: 100vh;
+      height: auto !important;
+      display: block !important;
+      align-items: flex-start !important;
     }
     
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
+      padding-top: 20px;
     }
     
     .declaration-content {
@@ -156,6 +163,250 @@
       margin-top: 30px;
       padding: 20px;
     }
+    
+    .jade-intro {
+      text-align: center;
+      font-size: 1.3rem;
+      color: #8B4A8B;
+      margin-bottom: 30px;
+    }
+    
+    .signature {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #8B4A8B;
+      margin-top: 50px;
+      font-family: 'Dancing Script', cursive;
+    }
+    
+    /* Responsividade para tablets */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+        padding-top: 30px;
+      }
+      
+      .container {
+        padding: 20px 10px;
+        padding-top: 10px;
+      }
+      
+      .declaration-content {
+        padding: 25px 20px;
+      }
+      
+      .declaration-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+      
+      .declaration-content h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+      }
+      
+      .declaration-content p {
+        font-size: 1.1rem;
+        text-align: left;
+      }
+      
+      .declaration-content p:first-of-type {
+        font-size: 1.2rem;
+      }
+      
+      .jade-name {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        margin: 20px 0;
+      }
+      
+      .special-message {
+        padding: 25px 20px;
+        margin: 25px 0;
+      }
+      
+      .special-message p {
+        font-size: 1.3rem;
+      }
+      
+      .in-memory {
+        font-size: 1.5rem;
+        margin: 30px 0;
+        padding: 15px;
+      }
+      
+      .stars-dedication {
+        font-size: 1.1rem;
+        padding: 15px;
+      }
+      
+      .back-button {
+        bottom: 20px;
+        padding: 12px 25px;
+        font-size: 16px;
+      }
+      
+      .jade-intro {
+        font-size: 1.2rem;
+      }
+      
+      .signature {
+        font-size: 1.5rem;
+        margin-top: 40px;
+      }
+    }
+    
+    /* Responsividade para celulares */
+    @media (max-width: 480px) {
+      body {
+        padding: 5px;
+        padding-top: 20px;
+      }
+      
+      .container {
+        padding: 15px 5px;
+        padding-top: 10px;
+        max-width: 100%;
+      }
+      
+      .declaration-content {
+        padding: 20px 15px;
+        border-radius: 15px;
+        margin-bottom: 80px;
+      }
+      
+      .declaration-content h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+      
+      .declaration-content h2 {
+        font-size: 1.7rem;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      
+      .declaration-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      
+      .declaration-content p:first-of-type {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+      
+      .jade-name {
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        margin: 15px 0;
+      }
+      
+      .heart {
+        font-size: 1.5rem;
+        margin: 0 5px;
+      }
+      
+      .special-message {
+        padding: 20px 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
+      
+      .special-message p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      
+      .in-memory {
+        font-size: 1.3rem;
+        margin: 25px 0;
+        padding: 12px;
+      }
+      
+      .stars-dedication {
+        font-size: 1rem;
+        padding: 15px 10px;
+        margin-top: 20px;
+      }
+      
+      .stars-dedication p {
+        font-size: 1rem;
+      }
+      
+      .memorial-date {
+        font-size: 0.95rem;
+        margin: 15px 0;
+        padding-top: 15px;
+      }
+      
+      .memorial-date p {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+      }
+      
+      .back-button {
+        position: fixed;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 30px);
+        max-width: 300px;
+        padding: 12px 20px;
+        font-size: 15px;
+        border-radius: 25px;
+      }
+      
+      .jade-intro {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+      
+      .signature {
+        font-size: 1.4rem;
+        margin-top: 35px;
+      }
+    }
+    
+    /* Ajustes para telas muito pequenas */
+    @media (max-width: 360px) {
+      body {
+        padding-top: 15px;
+      }
+      
+      .container {
+        padding-top: 5px;
+      }
+      
+      .declaration-content h1 {
+        font-size: 1.6rem;
+      }
+      
+      .declaration-content h2 {
+        font-size: 1.5rem;
+      }
+      
+      .jade-name {
+        font-size: 2.4rem;
+      }
+      
+      .declaration-content p {
+        font-size: 0.95rem;
+      }
+    }
+    
+    /* Garantir que o conteúdo não seja cortado */
+    html {
+      scroll-padding-top: 20px;
+    }
+    
+    .declaration-content {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -166,7 +417,7 @@
       <h1>Em Memória Eterna</h1>
       <p class="in-memory">Jade</p>
       
-      <p style="text-align: center; font-size: 1.3rem; color: #8B4A8B; margin-bottom: 30px;">
+      <p class="jade-intro">
         <span class="jade-name">Jade</span>
       </p>
       
@@ -212,7 +463,7 @@
         <p>Te amo hoje, amanhã e para sempre <span class="heart">❤️</span></p>
       </div>
       
-      <p style="text-align: center; font-size: 1.8rem; font-weight: 400; color: #8B4A8B; margin-top: 50px; font-family: 'Dancing Script', cursive;">
+      <p class="signature">
         Com amor eterno, <br>
         Seu papai <span class="heart">❤️</span>
       </p>
